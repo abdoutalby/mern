@@ -58,8 +58,8 @@ function Dashboard() {
   }
 
   return (
-    <>
-    
+    <>  
+<input type="checkbox" id="nav-toggle" />
       <div className="sidebar">
         <SideBar />
       </div>
@@ -71,6 +71,9 @@ function Dashboard() {
         </main> 
       </div>
     </>
+
+ 
+ 
   );
 }
 

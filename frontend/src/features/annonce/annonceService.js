@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "api/recruters/";
+const API_URL = "api/annonces/";
 
 // Create
 const create  = async(Data, token) => {
@@ -11,14 +11,14 @@ const create  = async(Data, token) => {
         },
     };
 
-    const response = await axios.post(`${API_URL}register`, Data, config);
+    const response = await axios.post(`${API_URL}`, Data, config);
 
     return response.data;
 };
 
 // Get all
 const getAll = async() => {
-    const response = await axios.get(API_URL);
+    const response = await axios.get(API_URL+'all');
     return response.data;
 };
 
@@ -34,21 +34,10 @@ const deleteById = async(Id, token) => {
     return response.data;
 };
 
-const changeStatus = async(id, token )=>{
-    const config = {
-        headers: {
-            Authorization : `Bearer ${token}` ,
-        },
-    }
-    const response = await axios.put(API_URL+id, config)
-    return response.data
-}
-
-const recruterService = {
+const annonceService = {
     create,
     getAll,
     deleteById,
-    changeStatus
 };
 
-export default  recruterService;
+export default  annonceService;

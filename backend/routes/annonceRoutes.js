@@ -7,9 +7,9 @@ const {
 } = require('../controllers/annonceController')
 const { recruterProtect } = require('../middleware/recruterMiddleware')
  
-router.post('/', recruterProtect,addAnnonce  )
-router.get('/' ,recruterProtect,getAllByRecruter )
-router.get('/all' ,recruterProtect,getAll )
+router.post('/',   addAnnonce  )
+router.get('/'   ,getAllByRecruter )
+router.get('/all'  ,getAll )
 
 
 module.exports = router
