@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import {  createCondidat,deleteCondidat,getCondidats } from "../../features/condidat/condidatSlice";
 import Spinner from "../../components/Spinner";
 import { Link } from "react-router-dom";
-
+ 
 function AddCondidat() {
   const [formData, setFormData] = useState({
     name: "",

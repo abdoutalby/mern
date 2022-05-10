@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 
 import Spinner from "../components/Spinner";
 import { getGoals, reset } from "../features/goals/goalSlice";

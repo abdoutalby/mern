@@ -9,6 +9,7 @@ import {
   reset,
 } from "../../features/condidat/condidatSlice";
 import Condidat from "./Condidat";
+import React from "react";
 
 function Condidats() {
   const navigate = useNavigate();

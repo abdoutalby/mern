@@ -9,6 +9,7 @@ import {
   reset,
 } from "../../features/recruter/recruterSlice";
 import Condidat from "./Recruter";
+import React from "react";
 
 function Recruters() {
   const navigate = useNavigate();
